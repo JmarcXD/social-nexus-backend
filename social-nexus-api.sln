@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "social-nexus-api", "social-nexus-api\social-nexus-api.csproj", "{761558DE-8015-46A9-B720-8D477C2885C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "social-nexus-api.Domain", "social-nexus-api.Domain\social-nexus-api.Domain.csproj", "{AB896B31-710C-49EF-BCE4-08857748C498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "social-nexus-api.Infrastructure", "social-nexus-api.Infrastructure\social-nexus-api.Infrastructure.csproj", "{1922D284-9FF7-431C-AC18-9C91E259089A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AB896B31-710C-49EF-BCE4-08857748C498} = {AB896B31-710C-49EF-BCE4-08857748C498}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "social-nexus-api.BusinessLogic", "social-nexus-api.BusinessLogic\social-nexus-api.BusinessLogic.csproj", "{35D8CA70-2206-482B-99F1-1530F9C2A1D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1922D284-9FF7-431C-AC18-9C91E259089A} = {1922D284-9FF7-431C-AC18-9C91E259089A}
+		{8C23C172-61EC-47DA-A4F2-0B4E9B13E178} = {8C23C172-61EC-47DA-A4F2-0B4E9B13E178}
+		{AB896B31-710C-49EF-BCE4-08857748C498} = {AB896B31-710C-49EF-BCE4-08857748C498}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "social-nexus-api.DataTransferObject", "social-nexus-api.DataTransferObject\social-nexus-api.DataTransferObject.csproj", "{8C23C172-61EC-47DA-A4F2-0B4E9B13E178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{761558DE-8015-46A9-B720-8D477C2885C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761558DE-8015-46A9-B720-8D477C2885C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761558DE-8015-46A9-B720-8D477C2885C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761558DE-8015-46A9-B720-8D477C2885C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB896B31-710C-49EF-BCE4-08857748C498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB896B31-710C-49EF-BCE4-08857748C498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB896B31-710C-49EF-BCE4-08857748C498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB896B31-710C-49EF-BCE4-08857748C498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1922D284-9FF7-431C-AC18-9C91E259089A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1922D284-9FF7-431C-AC18-9C91E259089A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1922D284-9FF7-431C-AC18-9C91E259089A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1922D284-9FF7-431C-AC18-9C91E259089A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D8CA70-2206-482B-99F1-1530F9C2A1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D8CA70-2206-482B-99F1-1530F9C2A1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D8CA70-2206-482B-99F1-1530F9C2A1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D8CA70-2206-482B-99F1-1530F9C2A1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C23C172-61EC-47DA-A4F2-0B4E9B13E178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C23C172-61EC-47DA-A4F2-0B4E9B13E178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C23C172-61EC-47DA-A4F2-0B4E9B13E178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C23C172-61EC-47DA-A4F2-0B4E9B13E178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AAFDE0D-0E52-474E-86BA-248E9311622C}
+	EndGlobalSection
+EndGlobal
